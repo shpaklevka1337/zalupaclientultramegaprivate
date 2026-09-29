@@ -120,7 +120,7 @@ public class Interface extends Module {
     @Setting
     private final TextValue waterMarkText = new TextValue(
             "Watermark Component",
-            "Krs",
+            "что за хуйню я делаю сука кому то надо лечится",
             waterMark::get
     );
 
