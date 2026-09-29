@@ -53,7 +53,7 @@ public class CustomTitleScreen extends Screen implements IMinecraft {
     private final MenuButton friendsButton = new MenuButton("Friends");
     private final MenuButton optionsButton = new MenuButton("Options");
     private final MenuButton updateAvailableButton = new MenuButton("Update Available");
-    private final MenuButton exitButton = new MenuButton("Exit");
+    private final MenuButton exitButton = new MenuButton("go out naxuy");
     private final List<MenuButton> menuButtons = List.of(
             singlePlayerButton,
             multiPlayerButton,
