@@ -40,34 +40,34 @@ public class Client implements IMinecraft {
     }
 
     public static void inject() {
-        ChatUtil.showLog("Started loading Krs...");
+        ChatUtil.showLog("нахуй ты это читаешь?");
 
         eventManager = new EventManager();
-        ChatUtil.showLog("Initialized Event Manager");
+        ChatUtil.showLog("откуда ты ваще это узнал?");
 
         configManager = new ConfigManager();
-        ChatUtil.showLog("Initialized Config Manager");
+        ChatUtil.showLog("че то там конфиг менеджер");
 
         rotationManager = new RotationManager();
-        ChatUtil.showLog("Initialized Rotation Manager");
+        ChatUtil.showLog("чето там ротацион менеджер");
 
         nanoVgManager = new NanoVGManager();
-        ChatUtil.showLog("Initialized NanoVG Manager");
+        ChatUtil.showLog("че там еще че то");
 
         notificationManager = new NotificationManager();
-        ChatUtil.showLog("Initialized Notification Manager");
+        ChatUtil.showLog("ыфвфыв");
 
         FileUtil.INSTANCE.doCfgNetLoaderAsync();
 
         ModuleManager.onInitialize();
-        ChatUtil.showLog("Initialized Module Manager");
+        ChatUtil.showLog("клиент делал чат гпт");
 
         configManager.load();
-        ChatUtil.showLog("Loaded config");
+        ChatUtil.showLog("все давай вась");
 
         FileUtil.INSTANCE.updateCheckAsync();
 
-        ChatUtil.showLog("Loaded Krs Client " + clientVersion);
+        ChatUtil.showLog("Loaded zalupa client (ultra private + no bypass)" + clientVersion);
         loaded = true;
     }
 
