@@ -47,13 +47,13 @@ public class CustomTitleScreen extends Screen implements IMinecraft {
     private boolean musicVolumeSliderDragging;
     private boolean musicVolumeDirty;
 
-    private final MenuButton singlePlayerButton = new MenuButton("Single Player");
-    private final MenuButton multiPlayerButton = new MenuButton("Multi Player");
-    private final MenuButton realmsButton = new MenuButton("Realms");
-    private final MenuButton friendsButton = new MenuButton("Friends");
-    private final MenuButton optionsButton = new MenuButton("Options");
-    private final MenuButton updateAvailableButton = new MenuButton("Update Available");
-    private final MenuButton exitButton = new MenuButton("go out naxuy");
+    private final MenuButton singlePlayerButton = new MenuButton("нахуя тебе одиночная игра?");
+    private final MenuButton multiPlayerButton = new MenuButton("гнилые сервера");
+    private final MenuButton realmsButton = new MenuButton("реалмс (я хз че эт значит может быть реалми)");
+    private final MenuButton friendsButton = new MenuButton("кенты");
+    private final MenuButton optionsButton = new MenuButton("тут ты мало че поймешь");
+    private final MenuButton updateAvailableButton = new MenuButton("бегом обнову качать сука");
+    private final MenuButton exitButton = new MenuButton("ну нахуй этот ебанный клиент");
     private final List<MenuButton> menuButtons = List.of(
             singlePlayerButton,
             multiPlayerButton,
@@ -362,7 +362,7 @@ public class CustomTitleScreen extends Screen implements IMinecraft {
             if (ensureTexture(vg, "icon", "assets/krs/icon.png"))
                 vg.texturedRoundedRectangle(iconX, iconY, iconSize, iconSize, 10f, "icon");
 
-            NVGFonts.INTER_MEDIUM.drawText("Welcome to Krs Client (v" + Client.clientVersion + ")", 8f, screenHeight - 8f, 22f, Color.WHITE, Alignment.LEFT_BOTTOM, true);
+            NVGFonts.INTER_MEDIUM.drawText("привет это кряк fruitzrecode сразу скажу нихуя тут не байпасит закрывай нахуй (v" + Client.clientVersion + ")", 8f, screenHeight - 8f, 22f, Color.WHITE, Alignment.LEFT_BOTTOM, true);
             NVGFonts.INTER_MEDIUM.drawText(getCurrentTime(), screenWidth - 10f, 10f, 22f, Color.WHITE, Alignment.RIGHT_TOP, true);
             NVGFonts.INTER.drawText("Currently Logged Into: " + mc.getUser().getName(), centerX, 20f, 21f, Color.WHITE, Alignment.CENTER_TOP, true);
             renderMusicVolumeSlider(vg, centerX, mouseX, mouseY);
